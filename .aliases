@@ -10,7 +10,7 @@ alias dc="cd ~/Documents"
 alias p="cd ~/projects"
 alias g="git"
 alias n="nano"
-alias py3="python3"
+alias rb="ruby"
 alias py="python"
 
 # File size
