@@ -3,8 +3,24 @@ function mkd() {
 	mkdir -p "$@" && cd "$@"
 }
 
+# find shorthand
+function f() {
+    find . -name "$1"
+}
+
 # Start new Python server
 function server() {
 	python -m SimpleHTTPServer 8088
 	open "http://localhost:8088"
+}
+
+# Copy w/ progress
+cpprog () {
+  rsync -WavP --human-readable --progress $1 $2
+}
+
+# take this repo and copy it to somewhere else minus the .git stuff.
+function gitexport(){
+	mkdir -p "$1"
+	git archive master | tar -x -C "$1"
 }
