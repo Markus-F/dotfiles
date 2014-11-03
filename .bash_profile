@@ -15,9 +15,6 @@ shopt -s histappend
 # Autocorrect typos in path names when using `cd`
 shopt -s cdspell
 
-# init rbenv
-eval "$(rbenv init -)"
-
 # init bash-completion
 if [ -f 'brew --prefix'/etc/bash_completion ]; then
 	.'brew --prefix'/etc/bash_completion
