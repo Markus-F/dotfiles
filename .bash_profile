@@ -16,8 +16,8 @@ shopt -s histappend
 shopt -s cdspell
 
 # init bash-completion
-if [ -f 'brew --prefix'/etc/bash_completion ]; then
-	.'brew --prefix'/etc/bash_completion
+if [ -f $(brew --prefix)/etc/bash_completion ]; then
+	.$(brew --prefix)/etc/bash_completion
 fi
 
 # Add tab completion for SSH hostnames based on ~/.ssh/config, ignoring wildcards
