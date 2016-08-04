@@ -7,11 +7,7 @@ alias ...="cd ../.."
 alias d="cd ~/Dropbox"
 alias dl="cd ~/Downloads"
 alias dc="cd ~/Documents"
-alias p="cd ~/Projects"
 alias g="git"
-alias n="nano"
-alias rb="ruby"
-alias py="python"
 
 # File size
 alias fs="stat -f \"%z bytes\""

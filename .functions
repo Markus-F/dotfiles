@@ -33,12 +33,3 @@ function gz() {
 	gzip -c "$1" | wc -c
 }
 
-# mongod location
-function mymongo() {
-	if [ -z "$1"]; then
-		mongod --dbpath ~/Projects/data/mongotest
-	else
-		mongod --dbpath ~/Projects/data/$1
-fi
-}
-
