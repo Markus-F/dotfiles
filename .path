@@ -1,2 +1,8 @@
-# Add `~/bin` to the `$PATH`
+# Add JAVA_HOME 
+export JAVA_HOME=$(/usr/libexec/java_home)
+
+# Add '~/bin' to the '$PATH'
 export PATH="$HOME/bin:$PATH"
+
+# Add Maven to '$PATH'
+export PATH="~/bin/apache-maven-3.3.9/bin:$PATH"
