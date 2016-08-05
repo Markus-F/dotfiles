@@ -4,10 +4,8 @@ alias cd..="cd .."
 alias ...="cd ../.."
 
 # Shortcuts
-alias d="cd ~/Dropbox"
-alias dl="cd ~/Downloads"
-alias dc="cd ~/Documents"
 alias g="git"
+alias s="sublime"
 
 # File size
 alias fs="stat -f \"%z bytes\""
