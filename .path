@@ -1,6 +1,10 @@
 # Add JAVA_HOME 
 export JAVA_HOME=$(/usr/libexec/java_home)
 
+#ADD SCALA_HOME
+export SCALA_HOME=/Users/markusfiedel/bin/scala-2.11.8
+export PATH="$SCALA_HOME/bin:$PATH"
+
 # Add '~/bin' to the '$PATH'
 export PATH="$HOME/bin:$PATH"
 
