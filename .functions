@@ -21,3 +21,8 @@ function gz() {
 	gzip -c "$1" | wc -c
 }
 
+# Start new Python server
+function server() {
+	python -m SimpleHTTPServer 8088
+}
+-
