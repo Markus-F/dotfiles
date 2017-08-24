@@ -6,3 +6,8 @@ export PATH="$HOME/bin:$PATH"
 
 # Add Maven to '$PATH'
 export PATH="~/bin/apache-maven-3.3.9/bin:$PATH"
+
+# Add GO to '$PATH'
+export GOROOT=/usr/local/opt/go/libexec
+export GOPATH=$HOME/.go
+export PATH=$PATH:$GOROOT/bin:$GOPATH/bin
