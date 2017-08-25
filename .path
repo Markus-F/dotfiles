@@ -1,13 +1,16 @@
 # Add JAVA_HOME 
 export JAVA_HOME=$(/usr/libexec/java_home)
 
-# Add '~/bin' to the '$PATH'
-export PATH="$HOME/bin:$PATH"
-
 # Add Maven to '$PATH'
 export PATH="~/bin/apache-maven-3.3.9/bin:$PATH"
 
 # Add GO to '$PATH'
 export GOROOT=/usr/local/opt/go/libexec
-export GOPATH=$HOME/.go
+export GOPATH=$HOME/Projects/go
 export PATH=$PATH:$GOROOT/bin:$GOPATH/bin
+
+# added by Miniconda2 4.3.21 installer
+export PATH="/Users/markusfiedel/miniconda2/bin:$PATH"
+
+# Add '~/bin' to the '$PATH'
+export PATH="$HOME/bin:$PATH"
