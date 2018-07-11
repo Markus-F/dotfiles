@@ -6,7 +6,6 @@ alias ...="cd ../.."
 # Shortcuts
 alias g="git"
 alias gstat="git status"
-alias s="sublime"
 
 alias new_dev_branch="git checkout -b development origin/development"
 
