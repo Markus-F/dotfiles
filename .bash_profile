@@ -14,3 +14,9 @@ shopt -s cdspell
 
 # Add tab completion for SSH hostnames based on ~/.ssh/config, ignoring wildcards
 [ -e "$HOME/.ssh/config" ] && complete -o "default" -o "nospace" -W "$(grep "^Host" ~/.ssh/config | grep -v "[?*]" | cut -d " " -f2)" scp sftp ssh
+
+# The next line updates PATH for the Google Cloud SDK.
+if [ -f '/Users/markusfiedel/Downloads/google-cloud-sdk/path.bash.inc' ]; then source '/Users/markusfiedel/Downloads/google-cloud-sdk/path.bash.inc'; fi
+
+# The next line enables shell command completion for gcloud.
+if [ -f '/Users/markusfiedel/Downloads/google-cloud-sdk/completion.bash.inc' ]; then source '/Users/markusfiedel/Downloads/google-cloud-sdk/completion.bash.inc'; fi
